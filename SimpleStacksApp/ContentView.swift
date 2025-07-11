@@ -14,10 +14,20 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-        }
+            HStack {
+                Image(systemName: "star")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                    
+                Text("Hi, All")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(.blue)
+                }//end of hstack
+        }//end of vstack
         .padding()
-    }
-}
+    }//end of body
+}//end of content view
 
 #Preview {
     ContentView()
